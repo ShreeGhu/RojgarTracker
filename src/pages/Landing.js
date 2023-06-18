@@ -1,7 +1,7 @@
 import { Logo } from "../components";
 import main from "../assets/images/main.svg";
 import Wrapper from "../assets/wrappers/LandingPage";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -22,7 +22,9 @@ const Landing = () => {
             customize their job preferences, track application progress, and
             receive notifications for interviews and deadlines.
           </p>
-          <Link to='/register' className="btn btn-hero">Login/Register</Link>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
         <img src={main} alt="imageoffront" className="img main-img" />
       </div>
