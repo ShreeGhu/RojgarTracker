@@ -15,6 +15,11 @@ const Wrapper = styled.aside`
     opacity: 0;
     transition: var(--transition);
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
   .show-sidebar {
     z-index: 99;
     opacity: 1;
@@ -72,5 +77,5 @@ const Wrapper = styled.aside`
   .active .icon {
     color: var(--primary-500);
   }
-`
+`;
 export default Wrapper
