@@ -235,6 +235,7 @@ ul {
   border-radius: var(--borderRadius);
   background: var(--backgroundColor);
   border: 1px solid var(--grey-200);
+  
 }
 .form-input,
 .form-select,
@@ -325,5 +326,4 @@ ul {
 .Toastify__toast {
   text-transform: capitalize;
 }
-
 

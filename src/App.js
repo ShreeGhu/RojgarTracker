@@ -8,6 +8,9 @@ import {
   AddJobs,
   Stats,
   SharedLayout,
+  Map,
+  Activities,
+  JobSearch,
 } from "./pages/Dashboard";
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
           <Route index element={<Stats />} />
           <Route path="all-jobs" element={<AllJobs />} />
           <Route path="add-jobs" element={<AddJobs />} />
+          <Route path="job-search" element={<JobSearch />} />
+          <Route path="map" element={<Map />} />
+          <Route path="activities" element={<Activities />} />
           <Route path="profile" element={<Profile />} />
         </Route>
         <Route path="landing" element={<Landing />} />
@@ -32,6 +38,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <ToastContainer position="top-center" />
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0-LuBnYvaJbYF7ZIVIB9dD00EMPmlutw&libraries=places"></script>
     </BrowserRouter>
   );
 }
