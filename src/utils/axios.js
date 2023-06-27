@@ -5,3 +5,6 @@ const customFetch = axios.create({
 });
 
 export default customFetch;
+
+//https://jobify-prod.herokuapp.com/api/v1/toolkit
+//https://jobs-api-npl-ea33453b0dda.herokuapp.com/api/v1

@@ -18,19 +18,22 @@ const initialState = {
 };
 
 export const createJob = createAsyncThunk(
-  "/job/createJob",
+  "/jobs/createJob",
   async (job, thunkAPI) => {
     try {
       const resp = await customFetch.post('/jobs', job, {
         headers: {
           authorization: `Bearer ${thunkAPI.getState().user.user.token}`,
+          
         },
       });
       thunkAPI.dispatch(clearValues());
       return resp.data;
+      
     } catch (error) {
       if (error.response.status === 401) {
         thunkAPI.dispatch(logoutUser());
+        // return thunkAPI.rejectWithValue(error.response.data.msg);
         return thunkAPI.rejectWithValue("Unauthorized! Logging out!!!");
       }
       return thunkAPI.rejectWithValue(error.response.data.msg);
