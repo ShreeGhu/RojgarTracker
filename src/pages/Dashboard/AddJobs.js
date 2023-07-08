@@ -2,9 +2,14 @@ import { FormRow, FormRowSelect } from "../../components";
 import Wrapper from "../../assets/wrappers/DashboardFormPage";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { handleChange, clearValues, createJob } from "../../features/job/jobSlice";
+import {
+  handleChange,
+  clearValues,
+  createJob,
+  editJob,
+} from "../../features/job/jobSlice";
 import ProfileAutocomplete from "../../AutoComplete/ProfileAutoComplete";
-
+import { useEffect } from "react";
 
 const AddJobs = () => {
   const {
@@ -20,6 +25,8 @@ const AddJobs = () => {
     editJobId,
   } = useSelector((store) => store.job);
 
+  const { user } = useSelector((store) => store.user);
+
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -29,7 +36,16 @@ const AddJobs = () => {
       toast.error("Please fill out Every Fields");
       return;
     }
-    dispatch(createJob({position,company,jobLocation,jobType,status}))
+    if (isEditing) {
+      dispatch(
+        editJob({
+          jobId: editJobId,
+          job: { position, company, jobLocation, jobType, status },
+        })
+      );
+      return;
+    }
+    dispatch(createJob({ position, company, jobLocation, jobType, status }));
   };
 
   const handleJobInput = (e) => {
@@ -37,6 +53,11 @@ const AddJobs = () => {
     const value = e.target.value;
     dispatch(handleChange({ name, value }));
   };
+  useEffect(() => {
+    if (!isEditing) {
+      dispatch(handleChange({ name: "jobLocation", value: user.location }));
+    }
+  }, []);
 
   return (
     <Wrapper>
@@ -52,7 +73,6 @@ const AddJobs = () => {
           />
           {/*company*/}
           <FormRow
-
             type="text"
             name="company"
             value={company}
@@ -61,8 +81,8 @@ const AddJobs = () => {
           {/*location*/}
           <ProfileAutocomplete
             type="text"
-            labelText='Job Location'
-            name='jobLocation'
+            labelText="Job Location"
+            name="jobLocation"
             value={jobLocation}
             handleChange={handleJobInput}
           />

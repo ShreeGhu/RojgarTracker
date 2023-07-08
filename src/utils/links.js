@@ -9,42 +9,36 @@ import { MdWorkOutline } from "react-icons/md";
 const links = [
   {
     id: 1,
-    text: "stats",
-    path: "/",
-    icon: <IoBarChartSharp />,
-  },
-  {
-    id: 2,
     text: "all jobs",
     path: "all-jobs",
     icon: <MdQueryStats />,
   },
   {
-    id: 3,
+    id: 2,
     text: "add jobs",
     path: "add-jobs",
     icon: <FaWpforms />,
   },
   {
-    id: 4,
+    id: 3,
     text: "job search",
     path: "job-search",
     icon: <MdWorkOutline />,
   },
   {
-    id: 5,
+    id: 4,
     text: "map",
     path: "map",
     icon: <IoMapSharp />,
   },
   {
-    id: 6,
+    id: 5,
     text: "activities",
     path: "activities",
     icon: <LuClipboardList />,
   },
   {
-    id: 7,
+    id: 6,
     text: "profile",
     path: "profile",
     icon: <ImProfile />,
