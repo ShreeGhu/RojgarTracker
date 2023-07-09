@@ -9,7 +9,7 @@ import {
   SharedLayout,
   Map,
   Activities,
-  JobSearch,
+  JobSearchPlatform,
 } from "./pages/Dashboard";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         >
           <Route path="all-jobs" element={<AllJobs />} />
           <Route path="add-jobs" element={<AddJobs />} />
-          <Route path="job-search" element={<JobSearch />} />
+          <Route path="job-search" element={<JobSearchPlatform />} />
           <Route path="map" element={<Map />} />
           <Route path="activities" element={<Activities />} />
           <Route path="profile" element={<Profile />} />

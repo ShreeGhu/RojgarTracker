@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const initialState = {
   name: " ",
   email: " ",
-  password: " ",
+  password: "",
   isMember: true,
 };
 
@@ -44,8 +44,8 @@ const Register = () => {
   useEffect(() => {
     if (user) {
       setTimeout(() => {
-        navigate('/');
-      },2000);
+        navigate("/all-jobs");
+      }, 2000);
     }
   }, [user]);
 
