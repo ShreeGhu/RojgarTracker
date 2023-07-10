@@ -8,7 +8,8 @@ import {
   AddJobs,
   SharedLayout,
   Map,
-  Activities,
+  DemoApp,
+  Learning,
   JobSearchPlatform,
 } from "./pages/Dashboard";
 
@@ -28,7 +29,8 @@ function App() {
           <Route path="add-jobs" element={<AddJobs />} />
           <Route path="job-search" element={<JobSearchPlatform />} />
           <Route path="map" element={<Map />} />
-          <Route path="activities" element={<Activities />} />
+          <Route path="demo-app" element={<DemoApp />} />
+          <Route path="learning" element={<Learning />} />
           <Route path="profile" element={<Profile />} />
         </Route>
         <Route path="landing" element={<Landing />} />

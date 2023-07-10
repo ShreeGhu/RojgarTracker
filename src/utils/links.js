@@ -1,10 +1,10 @@
-import { IoBarChartSharp } from "react-icons/io5";
 import { MdQueryStats } from "react-icons/md";
 import { FaWpforms } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 import { IoMapSharp } from "react-icons/io5";
-import { LuClipboardList } from "react-icons/lu";
+import { SiSololearn } from "react-icons/si";
 import { MdWorkOutline } from "react-icons/md";
+import {ImCalendar} from 'react-icons/im'
 
 const links = [
   {
@@ -32,10 +32,16 @@ const links = [
     icon: <IoMapSharp />,
   },
   {
+    id: 4,
+    text: "Calendar",
+    path: "demo-app",
+    icon: <ImCalendar />,
+  },
+  {
     id: 5,
-    text: "activities",
-    path: "activities",
-    icon: <LuClipboardList />,
+    text: "Learning",
+    path: "learning",
+    icon: <SiSololearn />,
   },
   {
     id: 6,
