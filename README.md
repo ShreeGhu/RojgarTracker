@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Centralized Employment Tracking Application(Rogjar Tracker)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Centralized Employment Tracking Application! This project aims to provide a comprehensive and user-friendly platform to help job seekers coordinate and monitor their job applications efficiently. Users can customize their preferences, track application status, read job descriptions, and access learning materials to enhance their interview preparation.
 
-## Available Scripts
+## Application Highlights
 
-In the project directory, you can run:
+- User-friendly landing page for easy registration and login.
+- Robust authentication using JSON Web Tokens (JWT) to secure user accounts and sessions.
+- Implementation of bcrypt method for password hashing, ensuring user password security.
+- Dashboard with various functional pages: stats, all jobs, add jobs, job search, map, learning, and profile.
+- Effective utilization of various APIs, enhancing the user's job search experience.
+- Integration of Google Maps API for location autocomplete features.
+- Seamless data management with a strong API connected to a MongoDB database.
+- Calendar page for event setup and organization.
+- Comprehensive learning page with relevant reading materials.
+- Compatibility with both MacBook and Windows platforms.
 
-### `npm start`
+## Libraries Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Toastify](https://github.com/fkhadra/react-toastify): For displaying user notifications.
+- [Google Maps API](https://developers.google.com/maps/documentation): To provide location autocomplete features.
+- [Swagger](https://swagger.io/docs/specification/2-0/basic-structure/): To generate API documentation.
+- [Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk): For recommending reading materials based on job applications.
+- [Rapid API](https://docs.rapidapi.com/): To access job postings from various platforms.
+- [FullCalendar](https://github.com/fullcalendar/fullcalendar): For creating draggable events calendars.
+- [Mapbox](https://docs.mapbox.com/): For better mapping, navigation and search experiences.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/ShreeGhu/RojgarTracker.git
+```
 
-### `npm run build`
+## Local Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To deploy this application locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository or download the source code
+1. Install the dependencies by running command `npm install` at the root directory of the project
+1. Run the app in the development mode by running command `npm start`
+1. Open http://localhost:3000 to view it in the browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Check out the screenshots.
+![screenshot1](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/552acbdd-fd4b-417f-b2b1-f413ca2390ec)
+![screenshot2](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/5a1dd605-4bfa-4648-8e65-b34b28a79ddd)
+![screenshot3](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/7d839863-1fcb-4269-9a11-dfa97157c1c6)
+![screenshot4](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/0d8e6513-3913-42f3-807d-8a8b2223d2b0)
+![screeshot5](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/d8270f62-2661-4647-bdce-24e971106597)
+![screenshot6](https://github.com/ShreeGhu/RojgarTracker/assets/99575211/d9e4720f-5ff4-4ea9-9b67-a9c7623b97d1)
 
-### `npm run eject`
+### Happy Coding!!! :grinning:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
